@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>DeleteView</h1>
+	<form method="POST">
+		{% csrf_token %}
+		<h2>Quieres eliminar a {{ object.name }}</h2>
+		<input type="submit" value="Eliminar">
+	</form>
+</body>
+</html>
